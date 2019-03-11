@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <style>
+        * {
+            box-sizing: border-box;   
+        }
+        
+        body {
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: #202020;
+            font-family: "Lora", Georgia, serif;
+            font-weight: 400;
+            letter-spacing: .02em;
+        }
+        
+        section h2 {
+            width: 100%;
+            text-align: center;
+        }
+        
+        p {
+           margin-top: 0;
+           margin-bottom: 1rem;  
+        }
+        
+        a {
+            text-decoration: none;
+            color: #642265;
+        }
+        
+        a:hover {
+            color: darkorange;
+        }
+        
+        section {
+           border-top: 2px solid #eee;
+           padding-top: 50px;
+           padding-bottom: 50px;
+        }
+        
+        
+        nav {
+            z-index: 2;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px 0 10px;
+            width: 100%;
+            border-bottom: 2px solid #eee;
+            display: flex;
+            justify-content: center;
+            font-family: "Lora", Georgia, serif;
+            background-color: #fff;
+        }
+        
+        nav a {
+            color: #000;
+            font-family: "Lora", Georgia, serif;
+            text-decoration: none;
+            letter-spacing: .02em;
+            margin: 0 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+            }
+
+        nav a:hover {
+            color: #642265;
+            border-bottom: 2px solid #642265;
+        }
+        
+        #welcome-section {
+            width: 65%;
+            margin: 0 auto;
+            height: 100vh;
+            position: relative;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #welcome-section div {
+            flex: 0 300px;
+        }
+        
+        #welcome-section img {
+            width: 100%;
+            height: auto;
+        }
+        
+        #welcome-section h1 {
+            font-size: 18px;
+            text-align: right;
+        }
+        
+        #projects {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        
+        .project-tile {
+            position: relative;
+            width: 80%;
+            margin: 20px auto;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .project-tile img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .overlay-plus {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .6);
+            background-size: 15%;
+            transition: opacity ease .75s;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .overlay-plus p {
+            font-size: 18px;
+            margin: auto;
+        }
+        
+        .overlay-plus:hover {
+            opacity: 1;
+        }
+        
+        #contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        
+        i {
+            margin: 0 5px;
+            color: #202020;
+        }
+        
+        @media screen and (min-width: 576px) {
+            
+            .project-tile {
+                width: 45%;
+                margin: 2.5%;
+            }
+        }
+        
+        @media screen and (min-width: 768px) {
+            
+            .project-tile {
+                width: 28%;
+                margin: 2.6%;
+            }
+        }   
+        
+    </style>
+</head>
+<body>
+   <div class="container">
+   
+    <nav id="navbar">
+       <a href="#welcome-section">home</a>
+       <a href="#projects">portfolio</a>
+       <a href="#contact">contact</a>
+    </nav>
+        
+    <section id="welcome-section">
+        <div>
+        <img src="media/logo_cmyk_opticalSpacingFinal.svg" alt="logo">
+        <h1>web development &amp;<br> graphic design services</h1>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>portfolio</h2>
+        <div class="project-tile"><a href="https://codepen.io/shreecheryl/live/OgWEvO" target="_blank"><img src="media/tributePage.jpg" alt="tribute page"><div class="overlay-plus"><p>Tribute Page</p></div></a></div>
+        <div class="project-tile"><a href="https://codepen.io/shreecheryl/live/rRVRpp" target="_blank"><img src="media/surveyForm.jpg" alt="survey form"><div class="overlay-plus"><p>Survey Form</p></div></a></div>
+        <div class="project-tile"><a href="https://codepen.io/shreecheryl/live/ZPyrJE" target="_blank"><img src="media/productLanding.jpg" alt="product landing page"><div class="overlay-plus"><p>Product Landing Page</p></div></a></div>
+        <div class="project-tile"><a href="https://codepen.io/shreecheryl/live/oVYeVy" target="_blank"><img src="media/technicalDoc.jpg" alt="technical documentation"><div class="overlay-plus"><p>Technical Documentation</p></div></a></div>
+        <div class="project-tile"><a href="https://lokanandayoga.com" target="_blank"><img src="media/lokanandaYoga.jpg" alt="lokananda yoga"><div class="overlay-plus"><p>Lokananda Yoga</p></div></a></div>
+        <div class="project-tile"><a href="https://shreecheryl.github.io/obpeoples/" target="_blank"><img src="media/obPeoples.jpg" alt="ob people's food coop"><div class="overlay-plus"><p>OB People's Food Coop</p></div></a></div>   
+    </section>
+    
+    <section id="contact">
+        <h2>contact me</h2>
+        <p>p: 858-337-2108<br>
+           e: <a href="mailto:info@cheryldavis.com">info@cheryldavis.com</a>
+        </p>
+        <div id="icons">
+            <a id="profile-link" href="https://github.com/shreecheryl" target="_blank"><i class="fab fa-github-square fa-lg"></i></a>
+            <a href="https://github.com/shreecheryl" target="_blank"><i class="fab fa-facebook-square fa-lg"></i></a>
+            <a href="https://github.com/shreecheryl" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://github.com/shreecheryl" target="_blank"><i class="fab fa-free-code-camp fa-lg"></i></a>
+        </div>  
+    </section>
+    
+   </div>  
+</body>
+</html>

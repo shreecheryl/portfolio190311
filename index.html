@@ -48,7 +48,7 @@
         }
         
         a:hover {
-            color: darkorange;
+            color: #F26722;
         }
         
         section {
@@ -112,6 +112,20 @@
             text-align: right;
         }
         
+        #welcome-section p {
+            font-size: 30px;
+            text-align: center;
+            margin-top: 5vh;
+        }
+        
+        #welcome-section i {
+            color: #202020;
+        }
+        
+        #welcome-section i:hover {
+            color: #642265;
+        }
+        
         #projects {
             display: flex;
             flex-wrap: wrap;
@@ -165,9 +179,17 @@
             margin-bottom: 100px;
         }
         
+        #profile-link {
+            font-size: 30px;
+        }
+        
         i {
             margin: 0 5px;
-            color: #202020;
+            color: #642265;
+        }
+        
+        i:hover {
+            color: #F26722;
         }
         
         @media screen and (min-width: 576px) {
@@ -184,6 +206,10 @@
                 width: 28%;
                 margin: 2.6%;
             }
+            
+            nav a {
+                font-size: 1.1em;
+            }
         }   
         
     </style>
@@ -199,8 +225,9 @@
         
     <section id="welcome-section">
         <div>
-        <img src="media/logo_cmyk_opticalSpacingFinal.svg" alt="logo">
-        <h1>web development &amp;<br> graphic design services</h1>
+            <img src="media/logo_cmyk_opticalSpacingFinal.svg" alt="logo">
+            <h1>web development &amp;<br> graphic design services</h1>
+            <p><a href="#projects"><i class="fas fa-angle-down"></i></a></p>
         </div>
     </section>
     
@@ -220,10 +247,10 @@
            e: <a href="mailto:info@cheryldavis.com">info@cheryldavis.com</a>
         </p>
         <div id="icons">
-            <a id="profile-link" href="https://github.com/shreecheryl" target="_blank"><i class="fab fa-github-square fa-lg"></i></a>
-            <a href="https://github.com/shreecheryl" target="_blank"><i class="fab fa-facebook-square fa-lg"></i></a>
-            <a href="https://github.com/shreecheryl" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-            <a href="https://github.com/shreecheryl" target="_blank"><i class="fab fa-free-code-camp fa-lg"></i></a>
+            <a id="profile-link" href="https://github.com/shreecheryl" target="_blank"><i class="fab fa-github-square"></i></a>
+            <a id="profile-link" href="https://github.com/shreecheryl" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a id="profile-link" href="https://github.com/shreecheryl" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a id="profile-link" href="https://github.com/shreecheryl" target="_blank"><i class="fab fa-free-code-camp"></i></a>
         </div>  
     </section>
     
